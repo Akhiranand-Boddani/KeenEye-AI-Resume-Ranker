@@ -10,11 +10,11 @@ google-generativeai==0.3.2
 requests==2.31.0
 
 # Data Processing
-numpy==1.24.3
+numpy==1.26.4
 pandas==2.0.3
 
 # Vector Search (Lightweight)
-faiss-cpu==1.7.4
+faiss-cpu==1.8.0
 
 # Visualization
 plotly==5.17.0
@@ -28,4 +28,4 @@ docx2txt==0.8
 python-dotenv==1.0.0
 
 # Optional (if using cross-encoder)
-# sentence-transformers==2.2.2
+sentence-transformers==2.2.2
