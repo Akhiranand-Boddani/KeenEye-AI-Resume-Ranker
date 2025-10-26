@@ -316,9 +316,7 @@ This project is licensed under the MIT License.
 ## 👤 **Author**
 
 **Akhiranand Boddani**  
-📧 Email: your.email@example.com  
-🔗 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)  
-🐙 GitHub: [Your GitHub](https://github.com/yourusername)
+📧 Email: akhiranandboddani.edu@gmail.com 
 
 ---
 
@@ -329,15 +327,6 @@ This project is licensed under the MIT License.
 - **Streamlit** - Cloud deployment platform
 - **FAISS** - Efficient similarity search
 - **APILayer** - Resume parsing API
-
----
-
-## 📞 **Support**
-
-Having issues? Check:
-- [Documentation](./docs/)
-- [Troubleshooting Guide](./docs/TROUBLESHOOTING.md)
-- [GitHub Issues](https://github.com/YOUR_USERNAME/KeenEye-Cloud/issues)
 
 ---
 
