@@ -1,10 +1,3 @@
-"""
-KeenEye v2.0 - API-Based LLM Analyst
-Uses Groq API for deep resume-job analysis
-Author: Project Agent
-Date: October 26, 2025
-"""
-
 import json
 import re
 from typing import Dict, List
