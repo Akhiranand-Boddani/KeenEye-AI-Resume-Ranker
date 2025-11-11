@@ -1,10 +1,3 @@
-"""
-KeenEye v2.0 - API Client Testing Script
-Test all API integrations before deployment
-Author: Project Agent
-Date: October 26, 2025
-"""
-
 import os
 import sys
 from dotenv import load_dotenv
