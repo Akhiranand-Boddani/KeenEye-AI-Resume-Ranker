@@ -1,10 +1,3 @@
-"""
-KeenEye v2.0 - Cloud Configuration Module
-Manages API keys, settings, and environment variables
-Author: Project Agent
-Date: October 26, 2025
-"""
-
 import os
 from dataclasses import dataclass, field
 from typing import Dict, Optional
