@@ -1,10 +1,3 @@
-"""
-KeenEye v2.0 - Pure HTTP Groq Client (Fallback)
-Use this if the Groq SDK has initialization issues
-Author: Project Agent
-Date: October 26, 2025
-"""
-
 import requests
 import time
 from typing import Dict, Any
