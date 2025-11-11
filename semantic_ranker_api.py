@@ -1,9 +1,3 @@
-"""
-KeenEye v2.0 - API-Based Semantic Ranker
-Uses Gemini Embeddings API for semantic search
-Author: Project Agent
-Date: October 26, 2025
-"""
 
 import numpy as np
 from typing import List, Tuple, Dict
