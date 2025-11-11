@@ -1,25 +1,23 @@
-"""
-KeenEye v2.0 - API Clients Module
-Handles all external API calls with error handling and retries
-Author: Project Agent
-Date: October 26, 2025
-"""
-
 import requests
 import time
 import re
 from typing import List, Dict, Optional
 import google.generativeai as genai
-from groq import Groq
 from io import BytesIO
 
 
+# CORRECT:
 class GroqClient:
-    """Groq API client for LLM inference"""
-    
     def __init__(self, api_key: str):
-        if not api_key:
+        if not api_key or api_key == "":
             raise ValueError("Groq API key is required")
+        
+        from groq import Groq  # Import here
+        self.client = Groq(api_key=api_key)
+        
+        # Verify client initialized
+        if self.client is None:
+            raise ValueError("Failed to initialize Groq client")
         
         # Initialize Groq client with minimal arguments
         # Avoid any proxy-related kwargs that might cause issues
