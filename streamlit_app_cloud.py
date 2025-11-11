@@ -1,10 +1,3 @@
-"""
-KeenEye v2.0 - Cloud API Edition
-Main Streamlit Application
-Author: Project Agent
-Date: October 26, 2025
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -24,6 +17,14 @@ from api_clients import (
 from semantic_ranker_api import SemanticRankerAPI, SkillMatcher, ExperienceMatcher
 from llm_analyst_api import LLMAnalystAPI
 
+# Debug: Check if secrets are loaded
+st.sidebar.write("🔍 Debug Info")
+if hasattr(st, 'secrets'):
+    st.sidebar.write(f"✅ Secrets loaded: {len(st.secrets)} keys")
+    st.sidebar.write(f"Groq key present: {bool(st.secrets.get('GROQ_API_KEY', ''))}")
+    st.sidebar.write(f"Groq key length: {len(st.secrets.get('GROQ_API_KEY', ''))}")
+else:
+    st.sidebar.error("❌ No secrets found!")
 
 # Page Configuration
 st.set_page_config(
@@ -285,9 +286,9 @@ def display_results(results_df, llm_analyses):
         st.markdown("### Complete Rankings Table")
         st.dataframe(
             results_df[[
-                'rank', 'Job Title', 'Company', 'semantic_score', 
-                'skill_coverage', 'final_score'
-            ]].style.background_gradient(subset=['final_score'], cmap='RdYlGn'),
+            'rank', 'Job Title', 'Company', 'semantic_score',
+            'skill_coverage', 'final_score'
+            ]],
             use_container_width=True
         )
 
