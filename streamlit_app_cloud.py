@@ -17,6 +17,14 @@ from api_clients import (
 from semantic_ranker_api import SemanticRankerAPI, SkillMatcher, ExperienceMatcher
 from llm_analyst_api import LLMAnalystAPI
 
+# Page Configuration
+st.set_page_config(
+    page_title="KeenEye v2.0 - AI Resume Ranker",
+    page_icon="🎯",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 # Debug: Check if secrets are loaded
 st.sidebar.write("🔍 Debug Info")
 if hasattr(st, 'secrets'):
@@ -25,14 +33,6 @@ if hasattr(st, 'secrets'):
     st.sidebar.write(f"Groq key length: {len(st.secrets.get('GROQ_API_KEY', ''))}")
 else:
     st.sidebar.error("❌ No secrets found!")
-
-# Page Configuration
-st.set_page_config(
-    page_title="KeenEye v2.0 - AI Resume Ranker",
-    page_icon="🎯",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 
 # Custom CSS
